@@ -16,7 +16,7 @@ def reply(message):
         return str(resp)
     message = " "
     for donor in donors:
-        print(donor.name)
-        message = message + f"\n*{donor.name}*\n{donor.blood_group}   {donor.city}\n{donor.contact_no}"
+        city = donor.city.title()
+        message = message + f"\n*{donor.name}*\n{donor.blood_group}   {city}\n{donor.contact_no}"
     resp.message(f"{message}")
     return str(resp)
