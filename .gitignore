@@ -1,3 +1,5 @@
 venv/
 .idea/
 *.pyc
+app/donors.db
+app/_pycache_
